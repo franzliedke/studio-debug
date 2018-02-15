@@ -3,8 +3,12 @@ language: php
 php:
   - 7.2
 
+env:
+  - COMPOSER_VERSION=1.6.2
+  - COMPOSER_VERSION=1.6.3
+
 before_script:
-  - composer self-update
+  - composer self-update $COMPOSER_VERSION
   - composer global require franzl/studio
 
 script:
