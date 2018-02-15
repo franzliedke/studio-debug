@@ -3,7 +3,7 @@
     "description": "Debugging Studio issue https://github.com/franzliedke/studio/issues/85",
     "type": "project",
     "require": {
-        "franzl/lib1": "dev-master",
-        "franzl/lib2": "dev-master"
+        "franzl/lib1": "*",
+        "franzl/lib2": "*"
     }
 }
