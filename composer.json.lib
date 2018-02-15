@@ -2,7 +2,10 @@
     "name": "franzl/studio-debug",
     "description": "Debugging Studio issue https://github.com/franzliedke/studio/issues/85",
     "type": "project",
-    "require": {},
+    "require": {
+        "franzl/lib1": "~0.10.0@dev",
+        "franzl/lib2": "~0.10.0@dev"
+    },
     "require-dev": {
         "franzl/studio": "*"
     },

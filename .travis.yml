@@ -8,11 +8,14 @@ env:
   - COMPOSER_VERSION=1.6.3
 
 before_script:
+  - cp -R lib1/.git.repo lib1/.git
+  - cp -R lib2/.git.repo lib2/.git
   - composer self-update $COMPOSER_VERSION
-  - composer global require franzl/studio
+  - composer install
+  - /bin/cp -f composer.json.lib composer.json
 
 script:
-  - composer install
+  - composer update
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)

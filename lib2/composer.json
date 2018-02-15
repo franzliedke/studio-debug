@@ -1,5 +1,10 @@
 {
     "name": "franzl/lib2",
     "type": "library",
-    "require": {}
+    "require": {},
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.10.x-dev"
+        }
+    }
 }
